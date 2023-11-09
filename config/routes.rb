@@ -19,4 +19,7 @@ Rails.application.routes.draw do
   post("/insert_user", { :controller => "users", :action => "create" })
 
   post("/update_user/:modify_id", { :controller => "users", :action => "update" })
+
+  post("/insert_comment/:modify_id", { :controller => "photos", :action => "create_comment" })
+
 end
