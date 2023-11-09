@@ -10,4 +10,5 @@ Rails.application.routes.draw do
 
   get("/delete_photo/:path_id", { :controller => "photos", :action => "destroy"})
 
+  post("/insert_photo", { :controller => "photos", :action => "create" })
 end
